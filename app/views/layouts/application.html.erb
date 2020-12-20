@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atria</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="contents">
+        <h1><a href="#">Atria</a></h1>
+        <div class="nav">
+          <ul class="header-nav">
+            <li class="news"><a href="#">NEWS</a></li>
+            <li class="live"><a href="#">LIVE</a></li>
+            <li class="descography"><a href="#">DISCOGRAPHY</a></li>
+            <li class="biography"><a href="#">BIOGRAPHY</a></li>
+            <li class="media"><a href="#">MEDIA</a></li>
+            <li class="gallary"><a href="#">GALLERY</a></li>
+            <li class="goods"><a href="#">GOODS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  <%= yield %>
+    
+  </body>
+</html>
